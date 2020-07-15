@@ -5,7 +5,17 @@ import { createPlan } from "./plan.js"
 const yearlyPlan = createPlan()
 console.log(yearlyPlan)
 
-import { createAsparagus } from "./seeds/asparagus.js"
+import { createCorn } from "./seeds/corn.js"
 
-const asparagusSeed = createAsparagus()
-console.log(asparagusSeed)
+const cornSeed = createCorn()
+console.log(cornSeed)
+
+import { addPlant } from "./field.js"
+
+addPlant(cornSeed)
+
+import { usePlants } from "./field.js"
+
+const plantsTest = usePlants()
+
+console.log(plantsTest)
