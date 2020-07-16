@@ -4,12 +4,12 @@ let allPlants = []
 
 
 export const addPlant = (seedObj) => {
-    if (seedObj.isArray) {
+    if (Array.isArray(seedObj)) {
         for (const seed of seedObj) {
             allPlants.push(seed)
         }
     }else{
-    allPlants.push(seedObj)
+        allPlants.push(seedObj)
     }
 
 }

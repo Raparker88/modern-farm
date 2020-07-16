@@ -10,6 +10,10 @@ plantSeeds(yearlyPlan)
 
 import { usePlants } from "./field.js"
 
-const plantsTest = usePlants()
+const seedsPlanted = usePlants()
 
-console.log (plantsTest)
+import { harvestedPlants } from "./harvester.js"
+
+const plantsHarvested = harvestedPlants(seedsPlanted)
+
+console.log(plantsHarvested)
