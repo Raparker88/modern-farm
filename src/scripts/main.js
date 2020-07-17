@@ -15,5 +15,9 @@ const seedsPlanted = usePlants()
 import { harvestedPlants } from "./harvester.js"
 
 const plantsHarvested = harvestedPlants(seedsPlanted)
-
 console.log(plantsHarvested)
+
+
+import {catalog} from "./catalog.js"
+
+catalog(plantsHarvested)
