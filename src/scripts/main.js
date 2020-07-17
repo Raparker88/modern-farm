@@ -12,9 +12,9 @@ import { usePlants } from "./field.js"
 
 const seedsPlanted = usePlants()
 
-import { harvestedPlants } from "./harvester.js"
+import { harvestPlants } from "./harvester.js"
 
-const plantsHarvested = harvestedPlants(seedsPlanted)
+const plantsHarvested = harvestPlants(seedsPlanted)
 console.log(plantsHarvested)
 
 

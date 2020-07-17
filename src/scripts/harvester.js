@@ -1,7 +1,7 @@
 
 let harvestedPlantsArray = []
 
-export const harvestedPlants = (plantsArray) => {
+export const harvestPlants = (plantsArray) => {
     for (const plantObj of plantsArray){
         if (plantObj.type === "Corn"){
             for (var i = 0; i < plantObj.output/2; i++){
