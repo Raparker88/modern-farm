@@ -9,3 +9,17 @@ export const catalog = (harvestedArr) => {
             `
     });
 }
+
+export const tableMaker = (table) => {
+    contentElement.innerHTML += `
+        <table>
+            <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+            </tr>
+            ${table}
+        </table>
+        `
+}
+
+

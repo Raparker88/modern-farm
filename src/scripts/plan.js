@@ -30,3 +30,7 @@ const crop = function* () {
     }
 }()
 
+export const useTypes = () => {
+    return types.slice()
+}
+
