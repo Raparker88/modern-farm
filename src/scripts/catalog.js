@@ -3,11 +3,11 @@
 const contentElement = document.querySelector(".container")
 
 export const catalog = (harvestedArr) => {
-    harvestedArr.forEach(plant => {
-        contentElement.innerHTML += `
-            <section class="plant">${plant.type}</section>
-            `
-    });
+  
+    contentElement.innerHTML += harvestedArr.map(plant => {
+        return `<section class="plant"${plant.type}</section>`
+    }).join("")
+
 }
 
 export const tableMaker = (table) => {
